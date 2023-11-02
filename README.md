@@ -1,6 +1,6 @@
 # Incremental Load with Lookup
 
-The other day, I wrote about overwriting data [using SSIS and demonstrated it by executing an SQL task to drop and recreate the destination](https://medium.com/@favboladale/a-step-by-step-guide-on-how-to-load-and-overwrite-data-from-sql-server-into-an-excel-file-using-a415cbaec269) when you re-execute to avoid duplicate data. It didn’t take so long to realize that this method is not scalable, especially for large datasets. In my pursuit of knowledge, I found a better method which is Incremental Load.
+The other day, I wrote about overwriting data using SSIS and demonstrated it by [executing an SQL task to drop and recreate the destination](https://medium.com/@favboladale/a-step-by-step-guide-on-how-to-load-and-overwrite-data-from-sql-server-into-an-excel-file-using-a415cbaec269) when you re-execute to avoid duplicate data. It didn’t take so long to realize that this method is not scalable, especially for large datasets. In my pursuit of knowledge, I found a better method which is Incremental Load.
 
 Incremental load is an ETL technique used to update a target database with only the new or changed data, reducing the processing time and resource usage. Instead of transferring the entire dataset, you only move the data that is new or modified.
 
